@@ -14,11 +14,12 @@
   <!-- Barra de Navegación -->
   <nav>
     <h1>ERNESTO VILLAGRA</h1>
+    <a href="#" class="idioma" id="idioma">Inglés</a>
     <ul class="navegacion">
-      <li><a href="#about" class="nav-link">Acerca de mi</a></li>
-      <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
-      <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
-      <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      <li><a href="#about" class="nav-link" id="acerca">Acerca de mi</a></li>
+      <li><a href="#habilidades" class="nav-link" id="habilidad">Habilidades</a></li>
+      <li><a href="#proyectos" class="nav-link" id="proyecto">Proyectos</a></li>
+      <li><a href="#contacto" class="nav-link" id="contactar">Contacto</a></li>
     </ul>
     <button class="menu-hamburguesa" id="menu-hamburguesa">
       <ion-icon class="barras" name="menu-outline"></ion-icon>
@@ -34,38 +35,36 @@
       class="hero-img"
     />
     <div class="bio animate__animated animate__shakeX">
-      <h2 class="bio-titulo">Sobre Mí</h2>
+      <!-- <h2 class="bio-titulo">Sobre Mí</h2> -->
       <p class="bio-texto">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
-        dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
-        inventore tempore minus nemo, iste ullam illo laboriosam maiores
-        repudiandae quos!
+        <h1 id="nombre">HOLA!, SOY ERNESTO</h1>
+        <h2>FULL STACK DEVELOPER</h2>
+        <h2>FRONT-END - BACK-END</h2>
+        <h2 id="ingeniero">ING.EN SIST.DE INFORMACIÓN</h2>
       </p>
     </div>
   </section>
 
   <!-- Sobre Mí -->
   <section class="mas-sobre" id="mas-sobre">
-    <h2>Más sobre mí</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-      nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
-      autem deleniti cupiditate molestias quis unde quae totam porro dicta
-      iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
+    <h2 id="mas">Más sobre mí</h2>
+    <p id="p1">
+      Fullstack Web Developer e Ingeniero en Sistemas de Información. Como desarrollador realizo tareas tanto de
+      Frontend como de Backend.
     </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
-      nostrum dolor minus, libero delectus praesentium perferendis
+    <p id="p2">
+      Cuento además, con mas de 15 años de experiencia en el sector del Transporte público de
+      pasajeros, tanto en la parte administrativa-operativa, como gerencial.
     </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
-      consequuntur labore? Ea totam voluptas amet!
+    <p id="p3">
+      Actualmente busco nuevos desafíos en el sector IT, en una empresa donde pueda aportar valor 
+      desde mi experiencia y conocimientos tanto dentro del desarrollo Web, como de mi carrera universitaria.
     </p>
   </section>
 
   <!-- Sección Habilidades -->
   <section class="habilidades" id="habilidades">
-    <h2 class="encabezado-habilidad">Mis mejores habilidades</h2>
+    <h2 class="encabezado-habilidad" id="encabezado-habilidad">Mis mejores habilidades</h2>
 
     <div class="contenedor-habilidad">
       <div class="first-set animate__animated animate__pulse">
@@ -87,14 +86,21 @@
           loading="lazy"
           class="icon tarjeta-icono"
         />
-      </div>
-
-      <div class="second-set animate__animated animate__pulse">
         <img
           src="assets/icons/React-Dark.svg"
           alt=""
           loading="lazy"
           class="icon tarjeta-icono"
+        />
+      </div>
+
+      <div class="second-set animate__animated animate__pulse">
+
+        <img
+          src="assets/icons/redux-logo-svgrepo-com.svg"
+          alt=""
+          loading="lazy"
+          class="icon tarjeta-icono imagen"
         />
         <img
           src="assets/icons/NodeJS-Dark.svg"
@@ -108,13 +114,19 @@
           loading="lazy"
           class="icon tarjeta-icono"
         />
+        <img
+          src="assets/icons/sequelize-svgrepo-com.svg"
+          alt=""
+          loading="lazy"
+          class="icon tarjeta-icono"
+        />
       </div>
     </div>
   </section>
 
   <!-- Sección Proyectos -->
   <section class="proyectos" id="proyectos">
-    <h2 class="titulo-de-proyectos">Algunos de mis proyectos recientes</h2>
+    <h2 class="titulo-de-proyectos" id="titulo-de-proyectos">Algunos de mis proyectos recientes</h2>
     <div class="contenedor-de-proyectos">
       <div class="contenedor-de-proyecto tarjeta-de-proyecto">
         <img
@@ -124,12 +136,16 @@
           class="foto-de-proyecto"
         />
         <h3 class="titulo-de-proyecto">Popular Movies</h3>
-        <p class="detalles-de-proyecto">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-          ratione vel inventore labore commodi modi quos culpa aut saepe!
-          Alias!
+        <p class="detalles-de-proyecto" id="popular_movies">
+          Este proyecto fue creado con Create React App. Utiliza la API pública The Movie Database (TMDB) API.
+          La aplicación al iniciar, muestra el listado de películas mas populares, 
+          ordenadas por popularidad. Tiene una barra de busqueda para buscar 
+          por nombre de pélicula, filtrado por puntuación, mediante un menú de clasificación en 
+          forma de estrellas. En caso de no existir películas en el filtrado o búsqueda, muestra una imágen ilustrativa.
+          Al hacer click sobre la imágen de una película se accede a un detalle que muestra otra imágen, 
+          sinopsis y fecha de realización entre otros.
         </p>
-        <a href="https://sage-madeleine-c01f05.netlify.app/" target="_blank" class="enlace-de-proyecto">Echale un vistazo!</a>
+        <a href="https://sage-madeleine-c01f05.netlify.app/" target="_blank" class="enlace-de-proyecto" id="vista">Echale un vistazo!</a>
       </div>
       <div class="contenedor-de-proyecto tarjeta-de-proyecto">
         <img
@@ -139,12 +155,19 @@
           class="foto-de-proyecto"
         />
         <h3 class="titulo-proyecto">My Ticket</h3>
-        <p class="detalles-de-proyecto">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-          ratione vel inventore labore commodi modi quos culpa aut saepe!
-          Alias!
+        <p class="detalles-de-proyecto" id="my_ticket">
+          Participación en un equipo de desarrollo ágil con sprint de
+          una semana, presentándole a un Product Owner, avances
+          sobre el desarrollo de una aplicación completa de un Ecommerce
+          con las siguientes features: catálogo de
+          productos, filtro por categorías, barra de búsqueda, login de
+          usuarios, carrito de compras, checkout de la orden y pago
+          con paypal, dashboard de administrador y vendedor para
+          edición de productos.
+          Tecnologías utilizadas: ReactJs, Redux, Express, Sequelize,
+          PostgreSQL entre otras.
         </p>
-        <a href="https://client-concerts.vercel.app/" target="_blank" class="project-link">Echale un vistazo!</a>
+        <a href="https://client-concerts.vercel.app/" target="_blank" class="enlace-de-proyecto" id="vista">Echale un vistazo!</a>
       </div>
       <div class="contenedor-de-proyecto tarjeta-de-proyecto">
         <img
@@ -154,24 +177,31 @@
           class="foto-de-proyecto"
         />
         <h3 class="titulo-de-proyecto">Henry Food</h3>
-        <p class="detalles-de-proyecto">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-          ratione vel inventore labore commodi modi quos culpa aut saepe!
-          Alias!
+        <p class="detalles-de-proyecto" id="henry_food">
+          SPA (Single-page Application) que integra todas las
+          tecnologías vistas en el bootcamp y consume API externa
+          (https://spoonacular.com/food-api). En la aplicación se
+          pueden buscar recetas de cocina, ordenarlos por puntuación
+          y por nombre, filtrarlos por tipo de dieta y origen, e incluso
+          añadir tus propias recetas a tu base de datos. Para el
+          Frontend utilicé React, Redux y CSS (styled-components), el
+          Backend fue desarrollado con Node.js, Express y se conecta
+          a la base de datos hecha en PostgreSQL, a través del ORM
+          Sequelize.
         </p>
-        <a href="https://github.com/Ernest2104/PI-Food" target="_blank" class="enlace-de-proyecto">Echale un vistazo!</a>
+        <a href="https://github.com/Ernest2104/PI-Food" target="_blank" class="enlace-de-proyecto" id="vista">Echale un vistazo!</a>
       </div>
     </div>
   </section>
 
   <!-- Sección Contacto-->
   <section class="contacto" id="contacto">
-    <h2>Contactame</h2>
+    <h2 id="titulo_contacto">Contactame</h2>
     <div class="contenedor-formulario-contacto">
       <div class="formulario-contacto">
         <form action="https://formspree.io/f/xyylngw" method="POST">
           <div class="control-formulario">
-            <label for="name">Nombre</label>
+            <label for="name" id="nombre_contacto">Nombre</label>
             <input
               type="text"
               id="name"
@@ -182,18 +212,18 @@
             />
           </div>
           <div class="control-formulario">
-            <label for="email">Correo Electrónico</label>
+            <label for="email" id="email_contacto">Correo Electrónico</label>
             <input
               type="email"
               id="email"
               name="sender-email"
-              placeholder="Ingreso tu correo electrónico"
+              placeholder="Ingresa tu correo electrónico"
               class="input-field"
               required
             />
           </div>
           <div class="control-formulario">
-            <label for="mensaje">Mensaje</label>
+            <label for="mensaje" id="mensaje_contacto">Mensaje</label>
             <textarea
               id="mensaje"
               cols="60"
