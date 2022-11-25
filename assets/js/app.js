@@ -70,4 +70,16 @@ traductor.addEventListener("click", () => {
   // if (traductor.innerHTML = "Inglés") {
   //   traductor.innerHTML = "Español"
   // }
-})
+});
+
+function modoOscuro() {
+  document.body.style.background = 'black';
+  document.querySelector('nav').style.background = 'black';
+  document.querySelector('.bio').style.background = 'black';
+  document.querySelector('.mas-sobre').style.background = 'black';
+  const skills = document.querySelectorAll('.tarjeta-icono');
+  console.log(skills);
+  skills.forEach(skill => {
+    skill.style.background = 'black';
+  })
+}
