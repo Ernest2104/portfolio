@@ -236,6 +236,22 @@ nav ul li {
   margin: 10px;
 }
 
+/*** CSS Sección Curriculum ***/
+.curriculum {
+  display: table;
+  justify-content: center;
+
+  width: 50%;
+  font-weight: var(--bold-font);
+  color: var(--primary-color);
+  font-size: 16px;
+  margin: 0 auto;
+  padding: 0.938rem;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+  width: auto;
+}
+
 /*** CSS Sección Contacto ***/
 .contacto {
   margin-top: 2rem;
@@ -277,6 +293,7 @@ nav ul li {
 }
 
 .input-field {
+  padding-left: 10px;
   /*dark mode*/
   /* background-color: var(--bg-color); */
 

@@ -78,8 +78,33 @@ function modoOscuro() {
   document.querySelector('.bio').style.background = 'black';
   document.querySelector('.mas-sobre').style.background = 'black';
   const skills = document.querySelectorAll('.tarjeta-icono');
-  console.log(skills);
   skills.forEach(skill => {
     skill.style.background = 'black';
-  })
+  });
+  document.querySelector('.proyectos').style.background = 'black';
+  const projects = document.querySelectorAll('.tarjeta-de-proyecto');
+  projects.forEach(project => {
+    project.style.background = 'black'
+  });
+  const inputs = document.querySelectorAll('.input-field');
+  inputs.forEach(input => {
+    input.style.background = 'black';
+    input.style.color = '#4756df';
+  });
+  const buttonSubmit = document.querySelector('.submit-btn');
+  buttonSubmit.style.background = 'black';
+  buttonSubmit.style.color = '#4756df';
+
+  buttonSubmit.addEventListener('mouseover', () => {
+    buttonSubmit.style.background = '#4756df';
+    buttonSubmit.style.color = 'black';
+    buttonSubmit.style.border = '2px solid #4756df';
+    buttonSubmit.style.cursor = 'pointer';
+  });
+  buttonSubmit.addEventListener('mouseout', () => {
+    buttonSubmit.style.background = 'black';
+    buttonSubmit.style.color = '#4756df';
+  });
+  document.getElementsByTagName('footer')[0].style.background = 'black';
+  document.getElementsByTagName('footer')[0].style.color = '#4756df';
 }
