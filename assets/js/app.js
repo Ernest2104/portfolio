@@ -73,6 +73,8 @@ traductor.addEventListener("click", () => {
 });
 
 function modoOscuro() {
+  const buttonDark = document.getElementById('darkMode');
+  buttonDark.innerText = 'Modo Claro'
   document.body.style.background = 'black';
   document.querySelector('nav').style.background = 'black';
   document.querySelector('.bio').style.background = 'black';
@@ -107,4 +109,53 @@ function modoOscuro() {
   });
   document.getElementsByTagName('footer')[0].style.background = 'black';
   document.getElementsByTagName('footer')[0].style.color = '#4756df';
+}
+
+function modoClaro() {
+  const buttonDark = document.getElementById('darkMode');
+  buttonDark.innerText = 'Modo Oscuro'
+  document.body.style.background = '#fcfcfc';
+  document.querySelector('nav').style.background = '#fcfcfc';
+  document.querySelector('.bio').style.background = '#fcfcfc';
+  document.querySelector('.mas-sobre').style.background = '#fcfcfc';
+  const skills = document.querySelectorAll('.tarjeta-icono');
+  skills.forEach(skill => {
+    skill.style.background = '#fcfcfc';
+  });
+  document.querySelector('.proyectos').style.background = '#fcfcfc';
+  const projects = document.querySelectorAll('.tarjeta-de-proyecto');
+  projects.forEach(project => {
+    project.style.background = '#fcfcfc'
+  });
+  const inputs = document.querySelectorAll('.input-field');
+  inputs.forEach(input => {
+    input.style.background = '#fcfcfc';
+    input.style.color = '#4756df';
+  });
+  const buttonSubmit = document.querySelector('.submit-btn');
+  buttonSubmit.style.background = '#fcfcfc';
+  buttonSubmit.style.color = '#4756df';
+
+  buttonSubmit.addEventListener('mouseover', () => {
+    buttonSubmit.style.background = '#4756df';
+    buttonSubmit.style.color = 'black';
+    buttonSubmit.style.border = '2px solid #4756df';
+    buttonSubmit.style.cursor = 'pointer';
+  });
+  buttonSubmit.addEventListener('mouseout', () => {
+    buttonSubmit.style.background = '#fcfcfc';
+    buttonSubmit.style.color = '#4756df';
+  });
+  document.getElementsByTagName('footer')[0].style.background = '#fcfcfc';
+  document.getElementsByTagName('footer')[0].style.color = 'black';
+}
+
+function claroOscuro() {
+  const boton = document.getElementById('darkMode').innerText
+  console.log(boton)
+  if (boton === 'Modo Oscuro') {
+    modoOscuro()
+  } else {
+    modoClaro()
+  }
 }
