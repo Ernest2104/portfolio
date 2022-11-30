@@ -363,6 +363,34 @@ footer {
   height: 3rem;
 }
 
+/* CSS */
+.darkMode {
+  background-color: #222;
+  border-radius: 6px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  max-width: none;
+  min-height: 44px;
+  min-width: 10px;
+  outline: none;
+  overflow: hidden;
+  padding: 9px 20px 8px;
+  /* position: relative; */
+  text-align: center;
+}
+
+.darkMode:hover,
+.darkMode:focus {
+  opacity: .75;
+}
+
 /*** Responsive ***/
 @media screen and (max-width: 720px) {
   /* los cambios se reflejan en una pantalla con un ancho de 720px e inferior */

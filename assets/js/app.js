@@ -31,13 +31,9 @@ navLink.forEach((link) =>
 );
 
 // Traducir Ingles/Español
-
-const traductor = document.getElementById('idioma');
-console.log(traductor)
-
-traductor.addEventListener("click", () => {
-  if (traductor.innerHTML = "Inglés") {
-    traductor.innerHTML = "Español";
+function espIng() {
+  const traductor = document.getElementById('idioma');
+  traductor.innerHTML = "Español";
     document.getElementById("acerca").innerHTML = "About Me";
     document.getElementById("habilidad").innerHTML = "Skills";
     document.getElementById("proyecto").innerHTML = "Projects";
@@ -64,17 +60,22 @@ traductor.addEventListener("click", () => {
     document.getElementById("mensaje_contacto").innerText = "Message";
     document.getElementById("mensaje").placeholder = "Write your message"
     document.getElementById("submit-btn").value = "Send"
+}
+
+function traductor() {
+  const traductor = document.getElementById('idioma');
+  if (traductor.innerText === 'Inglés') {
+    espIng();
   } else {
     location.reload();
   }
-  // if (traductor.innerHTML = "Inglés") {
-  //   traductor.innerHTML = "Español"
-  // }
-});
+};
 
 function modoOscuro() {
   const buttonDark = document.getElementById('darkMode');
-  buttonDark.innerText = 'Modo Claro'
+  buttonDark.innerText = 'Modo Claro';
+  buttonDark.style.color = 'black';
+  buttonDark.style.background = '#fcfcfc';
   document.body.style.background = 'black';
   document.querySelector('nav').style.background = 'black';
   document.querySelector('.bio').style.background = 'black';
@@ -113,10 +114,12 @@ function modoOscuro() {
 
 function modoClaro() {
   const buttonDark = document.getElementById('darkMode');
-  buttonDark.innerText = 'Modo Oscuro'
+  buttonDark.innerText = 'Modo Oscuro';
+  buttonDark.style.color = '#fcfcfc';
+  buttonDark.style.background = 'black'
   document.body.style.background = '#fcfcfc';
   document.querySelector('nav').style.background = '#fcfcfc';
-  document.querySelector('.bio').style.background = '#fcfcfc';
+  document.querySelector('.bio').style.background = 'antiquewhite';
   document.querySelector('.mas-sobre').style.background = '#fcfcfc';
   const skills = document.querySelectorAll('.tarjeta-icono');
   skills.forEach(skill => {
