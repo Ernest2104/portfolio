@@ -102,9 +102,11 @@ nav ul li {
   margin: auto;
 }
 
-.hero img {
+.hero-img {
   /*height: 37.5rem;*/
-  width: 37.5rem;
+  align-items: center;
+  justify-content: center;
+  width: 65%;
 }
 
 .bio {
@@ -377,11 +379,11 @@ footer {
   line-height: 1.5;
   margin: 0;
   max-width: none;
-  min-height: 44px;
-  min-width: 10px;
+  min-height: 1.5rem;
+  min-width: 0.5rem;
   outline: none;
   overflow: hidden;
-  padding: 9px 20px 8px;
+  padding: 0.9rem;
   /* position: relative; */
   text-align: center;
 }
@@ -426,20 +428,26 @@ footer {
     transform: translateX(0);
   }
 
+  nav h1 {
+    display: none;
+  }
+
   .hero {
-    margin-top: -4rem;
+    /* margin-top: -4rem; */
     flex-direction: column;
     gap: 0;
   }
 
   .hero img {
-    height: 37.5rem;
-    width: 30rem;
+    /* justify-content: center;
+    align-items: center; */
+    /* height: 37.5rem;
+    width: 30rem; */
   }
 
   .bio {
-    margin-top: -7rem;
-    width: 20.5rem;
+    /* margin-top: -7rem; */
+    /* width: 20.5rem; */
   }
 
   .mas-sobre {
@@ -475,8 +483,8 @@ footer {
 
 @media screen and (max-width: 420px) {
   .hero img {
-    height: 37.5rem;
-    width: 23rem;
+    /* height: 37.5rem;
+    width: 23rem; */
   }
 
   .bio {
