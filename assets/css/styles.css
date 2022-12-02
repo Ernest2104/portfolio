@@ -102,9 +102,9 @@ nav ul li {
   margin: auto;
 }
 
-.hero img {
+.hero-img {
   /*height: 37.5rem;*/
-  width: 37.5rem;
+  width: 50%;
 }
 
 .bio {
@@ -432,10 +432,10 @@ footer {
     gap: 0;
   }
 
-  .hero img {
+  /*.hero img {
     height: 37.5rem;
     width: 30rem;
-  }
+  }*/
 
   .bio {
     margin-top: -7rem;
