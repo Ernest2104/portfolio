@@ -117,7 +117,11 @@ function traductor() {
 
 function modoOscuro() {
   const buttonDark = document.getElementById('darkMode');
-  buttonDark.innerText = 'Modo Claro';
+  if (document.getElementById('idioma').innerText === "Español") {
+    buttonDark.innerText = 'Clear Mode';
+  } else {
+    buttonDark.innerText = 'Modo Claro';
+  }
   buttonDark.style.color = 'black';
   buttonDark.style.background = '#fcfcfc';
   document.body.style.background = 'black';
@@ -158,7 +162,11 @@ function modoOscuro() {
 
 function modoClaro() {
   const buttonDark = document.getElementById('darkMode');
-  buttonDark.innerText = 'Modo Oscuro';
+  if (document.getElementById('idioma').innerText === "Español") {
+    buttonDark.innerText = 'Dark Mode';
+  } else {
+    buttonDark.innerText = 'Modo Oscuro';
+  }
   buttonDark.style.color = '#fcfcfc';
   buttonDark.style.background = 'black'
   document.body.style.background = '#fcfcfc';
