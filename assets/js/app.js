@@ -34,11 +34,11 @@ function espIng() {
   const traductor = document.getElementById('idioma');
   traductor.innerHTML = "Español";
   const buttonDark = document.getElementById("darkMode");
-  if (buttonDark.innerHTML === "Modo Oscuro") {
-    buttonDark.innerHTML = "Dark Mode"
-  } else if (buttonDark.innerHTML === "Modo Claro") {
-    buttonDark.innerHTML = "Clear Mode"
-  }
+  if (buttonDark.innerText === "Modo Oscuro") {
+    buttonDark.innerText = "Dark Mode"
+  } else {
+    buttonDark.innerText = "Clear Mode"
+  } 
   document.getElementById("acerca").innerHTML = "About me";
   document.getElementById("habilidad").innerHTML = "Skills";
   document.getElementById("proyecto").innerHTML = "Projects";
@@ -70,7 +70,13 @@ function espIng() {
 
 function ingEsp() {
   const traductor = document.getElementById('idioma');
-  traductor.innerHTML = "Inglés";
+  traductor.innerText = "Inglés";const buttonDark = document.getElementById("darkMode");
+  if (buttonDark.innerText === "Dark Mode") {
+    buttonDark.innerText = "Modo Oscuro"
+  } else {
+    buttonDark.innerText = "Modo Claro"
+  } 
+
     document.getElementById("acerca").innerHTML = "Acerca de mi";
     document.getElementById("habilidad").innerHTML = "Habilidades";
     document.getElementById("proyecto").innerHTML = "Proyectos";
@@ -194,7 +200,7 @@ function modoClaro() {
 function claroOscuro() {
   const boton = document.getElementById('darkMode').innerText
   console.log(boton)
-  if (boton === 'Modo Oscuro') {
+  if (boton === 'Modo Oscuro' || boton === 'Dark Mode') {
     modoOscuro()
   } else {
     modoClaro()

@@ -20,8 +20,6 @@
 
 html {
   scroll-behavior: smooth;
-  /*dark mode*/
-  /* background: black; */
 }
 
 /* CSS Resets */
@@ -103,7 +101,6 @@ nav ul li {
 }
 
 .hero-img {
-  /*height: 37.5rem;*/
   width: 50%;
 }
 
@@ -191,7 +188,6 @@ nav ul li {
 
 .foto-de-proyecto {
   width: 70%;
-  /* height: 60%; */
 }
 
 .contenedor-de-proyectos {
@@ -294,11 +290,6 @@ nav ul li {
 
 .input-field {
   padding-left: 10px;
-  /*dark mode*/
-  /* background-color: var(--bg-color); */
-
-  /* background-color: black;
-  color: var(--primary-color); */
 }
 
 .input-field::placeholder {
@@ -375,10 +366,10 @@ footer {
   font-size: 0.9rem;
   font-weight: 700;
   line-height: 1.5;
-  margin: 0;
+  margin: 1rem;
   max-width: none;
-  min-height: 1.5rem;
-  min-width: 0.5rem;
+  /*min-height: 1.5rem;
+  min-width: 0.5rem;*/
   outline: none;
   overflow: hidden;
   padding: 0.9rem;
