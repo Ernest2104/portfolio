@@ -14,7 +14,7 @@
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
-  --transition: 0.3s;
+  --transition: color 0.1s, background-color 0.2s ease-in-out;
 }
 /* Variables fin */
 
@@ -44,6 +44,7 @@ a:hover {
 
 body {
   font-family: var(--font-family);
+  transition: var(--transition);
 }
 
 nav {
@@ -58,6 +59,8 @@ nav {
   /*dark mode*/
   background-color: var(--bg-color);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+
 }
 
 nav h1 {
@@ -98,6 +101,8 @@ nav ul li {
   gap: 2.5rem;
   max-width: 68.75rem;
   margin: auto;
+  transition: var(--transition);
+
 }
 
 .hero-img {
@@ -110,7 +115,9 @@ nav ul li {
   border-radius: 6px;
   box-shadow: 0px 2px 15px 2px var(--primary-shadow);
   /*dark mode*/
-  background-color: antiquewhite
+  background-color: antiquewhite;
+  transition: var(--transition);
+
 }
 
 .bio h1, h2 {
@@ -128,6 +135,7 @@ nav ul li {
 .mas-sobre {
   /*dark mode*/
   background-color: var(--bg-color);
+  transition: var(--transition);
 
   color: var(--primary-color);
   padding: 1rem 6rem;
@@ -149,6 +157,8 @@ nav ul li {
   margin: auto;
   text-align: center;
   margin-top: 2.5rem;
+  transition: var(--transition);
+
 }
 
 .encabezado-habilidad {
@@ -181,7 +191,7 @@ nav ul li {
 .proyectos {
   /*dark mode*/
   background-color: var(--bg-color);
-
+  transition: var(--transition);
   padding: 32px 0;
   margin-top: 2rem;
 }
@@ -195,6 +205,7 @@ nav ul li {
   align-items: center;
   justify-content: center;
   /* height: 15rem; */
+  
 }
 
 .titulo-de-proyectos {
@@ -230,6 +241,8 @@ nav ul li {
   box-shadow: 0 3px 10px var(--primary-shadow);
   padding: 20px;
   margin: 10px;
+  transition: var(--transition);
+
 }
 
 /*** CSS Sección Curriculum ***/
@@ -264,6 +277,8 @@ nav ul li {
   padding: 0.938rem;
   border-radius: 5px;
   box-shadow: 0 3px 10px var(--secondary-shadow);
+  transition: var(--transition);
+
 }
 
 .contenedor-formulario-contacto label {
@@ -339,6 +354,8 @@ footer {
   padding: 1.25rem;
   text-align: center;
   margin: 2rem 0 0;
+  transition: var(--transition);
+
 }
 
 /*** CSS Vuelve al comienzo ***/
