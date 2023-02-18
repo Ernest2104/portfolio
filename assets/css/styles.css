@@ -404,6 +404,7 @@ footer {
   /* los cambios se reflejan en una pantalla con un ancho de 720px e inferior */
   nav {
     padding: 1.5rem 1rem;
+    background-color: black;
   }
 
   nav div {
@@ -412,7 +413,10 @@ footer {
 
   nav ul {
     position: fixed;
-    background-color: var(--bg-color);
+    /* background-color: var(--bg-color); */
+    /* background-color: black; */
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
     flex-direction: column;
     top: 86px;
     left: 10%;

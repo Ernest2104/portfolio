@@ -130,6 +130,7 @@ function modoOscuro() {
   buttonDark.style.background = '#fcfcfc';
   document.body.style.background = 'black';
   document.querySelector('nav').style.background = 'black';
+  document.querySelector('ul').style.background = 'black';
   document.querySelector('.bio').style.background = 'black';
   document.querySelector('.mas-sobre').style.background = 'black';
   const skills = document.querySelectorAll('.tarjeta-icono');
@@ -176,6 +177,7 @@ function modoClaro() {
   document.body.style.background = '#fcfcfc';
   // document.body.style.transition = 'color 0.1s, background-color 0.2s ease-in-out';
   document.querySelector('nav').style.background = '#fcfcfc';
+  document.querySelector('ul').style.background = '#fcfcfc';
   document.querySelector('.bio').style.background = 'antiquewhite';
   document.querySelector('.mas-sobre').style.background = '#fcfcfc';
   const skills = document.querySelectorAll('.tarjeta-icono');
